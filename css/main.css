@@ -1,0 +1,118 @@
+:root{
+    --primary-color:#f49f1c;
+    --secondary-color:#d0f20f;
+    --bg-1:#030e4f;
+    --bg-2:#142c8d;
+    --padding:8%;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    color: white;
+}
+.Home{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bg-1);
+    display: flex;
+    flex-direction: column;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: var(--padding);
+}
+h2 {
+    padding: 30px var(--padding);
+    font-size: 2.2rem;
+    cursor: pointer;
+}
+nav h2 span {
+    color: var(--primary-color);
+}
+nav ul li {
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul a {
+    text-decoration: none;
+    padding: 8px;
+    color: white;
+    font-size: 20px;
+    transition: 0.4s;
+}
+nav ul a:hover{
+    color: var(--primary-color);
+}
+.Home .content {
+    flex-grow: 1;
+    padding: 0 var(--padding);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.text{
+    position: relative;
+    bottom: 70px;
+}
+h1{
+    font-size: 4.2rem;
+    padding:10px 0;
+}
+.text h4 {
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+}
+h3{
+    font-size: 2.1rem;
+    padding: 10px 0;
+    margin-bottom: 25px;
+}
+.content span {
+    color: var(--primary-color);
+}
+.btn{
+    background-color: var(--primary-color);
+    color: white;
+    padding: 15px 10px;
+    border-radius: 25px;
+    text-decoration: none;
+    margin: 10px 15px;
+    transition: .3s;
+}
+.btn:hover {
+    background-color: var(--secondary-color);
+}
+.social {
+    margin-top: 3rem;
+}
+.social img{
+    width: 2.5rem;
+    margin-right: 15px;
+    transition: .4s;
+}
+.social img:hover {
+    transform: scale(1.2);
+}
+.image{
+    width: 45%;
+    height: 90%;
+    position: relative;
+    align-items: flex-end;
+}
+.image img{
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-35%);
+    transition: .3s;    
+}
+.image img:hover{
+    height: 105%;
+}
